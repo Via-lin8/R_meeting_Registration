@@ -289,7 +289,7 @@
                         <div className="text-center mb-12 space-y-4">
                             <h1 className="text-2xl md:text-3xl font-bold text-[#5E6160] tracking-tight">
                                 114 年度住院醫師座談餐會
-                                <span className="block text-3xl md:text-4xl text-[#7B8D8E] mt-2">教學品質改善後測問卷</span>
+                                <span className="block text-3xl md:text-4xl text-[#7B8D8E] mt-2">後測問卷</span>
                             </h1>
                             <p className="text-[#888B8A] max-w-xl mx-auto">
                                 我們希望將座談會中的討論轉化為實際的改善動力。您的回饋將協助我們持續優化教學環境。
@@ -309,18 +309,18 @@
                             <SectionCard 
                                 title="一、整體座談感受" 
                                 icon={<UserCheck className="w-6 h-6 text-[#9AA598]" />}
-                                description="請評估本次座談的氛圍與聚焦程度（1＝非常不同意，5＝非常同意）"
+                                description="請評估本次座談的氛圍與聚焦程度"
                             >
                                 <LikertQuestion 
                                     id="section1_q1" 
-                                    question="本次座談會確實聚焦於住院醫師在臨床與教學現場的真實問題。"
+                                    question="1. 本次座談會確實聚焦於住院醫師在臨床與教學現場的真實問題。"
                                     value={formData.section1_q1}
                                     onChange={handleRatingChange}
                                     required={true}
                                 />
                                 <LikertQuestion 
                                     id="section1_q2" 
-                                    question="我感受到院方或教學主管有理解並重視住院醫師的學習處境。"
+                                    question="2. 我感受到院方或教學主管有理解並重視住院醫師的學習處境。"
                                     value={formData.section1_q2}
                                     onChange={handleRatingChange}
                                     required={true}
@@ -335,21 +335,21 @@
                             >
                                 <LikertQuestion 
                                     id="section2_q1" 
-                                    question="本次會議中提出的改善方案，內容清楚且容易理解。"
+                                    question="3. 本次會議中提出的改善方案，內容清楚且容易理解。"
                                     value={formData.section2_q1}
                                     onChange={handleRatingChange}
                                     required={true}
                                 />
                                 <LikertQuestion 
                                     id="section2_q2" 
-                                    question="我認為這些改善方案，未來有機會實際提升我的臨床學習或教學效率。"
+                                    question="4. 我認為這些改善方案，未來有機會實際提升我的臨床學習或教學效率。"
                                     value={formData.section2_q2}
                                     onChange={handleRatingChange}
                                     required={true}
                                 />
                                 <LikertQuestion 
                                     id="section2_q3" 
-                                    question="相較於會議前，我對院內教學與流程改善的可行性更有信心。"
+                                    question="5. 相較於會議前，我對院內教學與流程改善的可行性更有信心。"
                                     value={formData.section2_q3}
                                     onChange={handleRatingChange}
                                     required={true}
@@ -364,21 +364,21 @@
                             >
                                 <LikertQuestion 
                                     id="section3_q1" 
-                                    question="本次座談提升我對教學體系或院方決策的信任感。"
+                                    question="6. 本次座談提升我對教學體系或院方決策的信任感。"
                                     value={formData.section3_q1}
                                     onChange={handleRatingChange}
                                     required={true}
                                 />
                                 <LikertQuestion 
                                     id="section3_q2" 
-                                    question="若未來有相關教學或制度改善的討論或試行，我願意持續參與。"
+                                    question="7. 若未來有相關教學或制度改善的討論或試行，我願意持續參與。"
                                     value={formData.section3_q2}
                                     onChange={handleRatingChange}
                                     required={true}
                                 />
                                 <LikertQuestion 
                                     id="section3_q3" 
-                                    question="我認為此類住院醫師座談，對教學品質改善具有實質價值，值得持續辦理。"
+                                    question="8. 我認為此類住院醫師座談，對教學品質改善具有實質價值，值得持續辦理。"
                                     value={formData.section3_q3}
                                     onChange={handleRatingChange}
                                     required={true}
@@ -393,7 +393,7 @@
                             >
                                 <OpenEndedQuestion 
                                     id="feedback_q1"
-                                    question="本次座談中，您認為最有助於教學品質改善的一項討論或建議是什麼？為什麼？"
+                                    question="9. 本次座談中，哪一項討論或建議，最有助於實際改善住院醫師的學習流程或教學品質？請說明其原因或可能的影響。"
                                     value={formData.feedback_q1}
                                     onChange={handleTextChange}
                                     placeholder="請簡述您的看法..."
@@ -401,7 +401,7 @@
                                 />
                                 <OpenEndedQuestion 
                                     id="feedback_q2"
-                                    question="若目前只能優先改善一項影響住院醫師學習的問題，您最希望從哪一項開始？"
+                                    question="10. 在院方高度重視住院醫師學習需求的前提下，您認為最優先投入改善資源的教學或臨床流程，應具備哪些關鍵特徵？請簡要說明。"
                                     value={formData.feedback_q2}
                                     onChange={handleTextChange}
                                     placeholder="例如：排班制度、臨床教學時間不足..."
