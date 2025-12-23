@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>114年度住院醫師座談餐會 - 教學品質改善前後測問卷</title>
+    <title>114年度住院醫師座談會 - 前測問卷</title>
     
     <!-- 引入 Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -27,7 +27,7 @@
     <script type="text/babel">
         const { useState, useEffect } = React;
 
-        // ★★★ 已更新您的 Apps Script 網址 ★★★
+        // ★★★ 您的 Apps Script 網址 ★★★
         const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzV3opsPd2bsqNDP1eiGHR8egTkLSG-1CjmG64aSOufBzPFdyL2dn-6Mu0nGTaFOpqX/exec"; 
 
         // --- 圖示組件 (Inline SVGs for standalone HTML) ---
@@ -173,8 +173,12 @@
                             <span className="inline-block px-4 py-1 mb-4 rounded-full border border-[#B7B7A4] text-sm tracking-wider uppercase bg-[#B7B7A4]/20 backdrop-blur-sm">
                                 Pre-Assessment Survey
                             </span>
-                            <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">114 年度住院醫師座談餐會</h1>
-                            <h2 className="text-xl md:text-2xl font-medium text-[#DDBEA9] mb-6">教學品質改善前後測問卷</h2>
+                            {/* 修改點 1: 改為 114 年度住院醫師座談會 */}
+                            <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">114 年度住院醫師座談會</h1>
+                            
+                            {/* 修改點 2: 改為 前測問卷 */}
+                            <h2 className="text-xl md:text-2xl font-medium text-[#DDBEA9] mb-6">前測問卷</h2>
+                            
                             <p className="text-[#F0EBE5]/90 text-sm md:text-base leading-relaxed max-w-2xl mx-auto tracking-wide">
                                 本問卷目的在於了解住院醫師在臨床與教學現場的實際學習阻礙，並評估座談會是否有助於促成具體、可執行的教學品質改善方向。
                             </p>
@@ -230,7 +234,8 @@
                         </div>
 
                         <div className="text-center text-[#6B705C]/60 text-sm pb-12">
-                            問卷結果僅用於教學品質改善與制度優化，請安心填寫。
+                            {/* 修改點 3: 新增 教學部 住院醫師組 */}
+                            問卷結果僅用於教學品質改善與制度優化，請安心填寫。教學部 住院醫師組
                         </div>
                     </main>
                 </div>
